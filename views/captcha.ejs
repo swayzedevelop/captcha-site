@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Подтверждение капчи</title>
+  <link rel="stylesheet" href="/style.css" />
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Подтвердите, что вы не бот</h1>
+    <form action="/verify" method="post">
+      <input type="hidden" name="uuid" value="<%= uuid %>" />
+      <div class="g-recaptcha" data-sitekey="<%= siteKey %>"></div>
+      <button type="submit">Подтвердить</button>
+    </form>
+  </div>
+</body>
+</html>
