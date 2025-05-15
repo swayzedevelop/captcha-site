@@ -1,0 +1,30 @@
+body {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  font-family: sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.container {
+  background-color: #2b2b2b;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #000000aa;
+  text-align: center;
+  width: 400px;
+}
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #45a049;
+}
